@@ -1,1 +1,179 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    color: #4f4f4f
+}
+
+header {
+    background-color: rgba(200, 207, 221, 0.952);
+    /* border-bottom: .1em solid grey; */
+    height: 15vh;
+    padding: 0 1em;
+    width: 100vw;
+}
+
+header h1 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    margin: 0 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #4f4f4f
+
+}
+
+header button {
+    margin: 1em 0;
+    padding: 0;
+    border-radius: 0;
+    height: 2rem;
+    min-width: 7rem;
+    border-left: 1px solid grey;
+    font-size: .75em;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+}
+
+#home-button {
+    background-color: #4f4f4f;
+    color: white;
+    border-left: none;
+}
+
+#main {
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+nav {
+    margin: 0 2em;
+}
+
+button {
+    border-radius: 0;
+    border: 1px solid lightgrey;
+    padding: .5em 0;
+    min-width: 10em;
+}
+
+/* img {
+    width: 100%;
+    height: auto;
+} */
+
+#about-me {
+    padding: 2em;
+    margin: 2em;
+    display: flex;
+}
+
+#about-me-description{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    width: 50vw;
+    text-align: left;
+    padding: 2em 0 2em 2em;
+    margin: 2em 0 2em 2em;
+}
+
+#about-me-description > * {
+    margin: 1em;
+}
+
+#about-me-description > button {
+    max-width: 8em;
+    background-color: white;
+}
+
+#gallery {
+    padding: 1em;
+    margin: 1em;
+}
+
+#row1, #row2, #row1-captions, #row2-captions {
+    display: flex;
+    justify-content: space-around;
+}
+
+#row1-captions, #row2-captions {
+    margin: .2em 0 3em 0;
+}
+#row1-captions > *, #row2-captions > * {
+    width: 10em;
+    text-align: center;
+}
+
+footer {
+    height: 15vh;
+    background-color: rgba(200, 207, 221, 0.952);
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > button {
+    width: 8em;
+    margin: 2em;
+}
+
+.fa {
+    text-decoration: none;
+    margin: 0 .5em;
+}
+
+#icons {
+    display: flex;
+}
