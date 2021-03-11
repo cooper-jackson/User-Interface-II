@@ -7,13 +7,13 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, rem, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
+article, aside, canvas, details, rembed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
@@ -55,9 +55,9 @@ table {
 
 header {
     background-color: rgba(200, 207, 221, 0.952);
-    /* border-bottom: .1em solid grey; */
-    height: 15vh;
-    padding: 0 1em;
+    /* border-bottom: .1rem solid grey; */
+    height: 10rem;
+    padding: 0 1rem;
     width: 100vw;
 }
 
@@ -71,13 +71,13 @@ header h1 {
 }
 
 header button {
-    margin: 1em 0;
+    margin: 1rem 0;
     padding: 0;
     border-radius: 0;
     height: 2rem;
     min-width: 7rem;
     border-left: 1px solid grey;
-    font-size: .75em;
+    font-size: .75rem;
     font-family: 'Roboto Mono', monospace;
     color: black;
 }
@@ -94,14 +94,14 @@ header button {
 }
 
 nav {
-    margin: 0 2em;
+    margin: 0 2rem;
 }
 
 button {
     border-radius: 0;
     border: 1px solid lightgrey;
-    padding: .5em 0;
-    min-width: 10em;
+    padding: .5rem 0;
+    min-width: 10rem;
 }
 
 /* img {
@@ -110,8 +110,8 @@ button {
 } */
 
 #about-me {
-    padding: 2em;
-    margin: 2em;
+    padding: 2rem;
+    margin: 2rem;
     display: flex;
 }
 
@@ -122,22 +122,22 @@ button {
     flex-direction: column;
     width: 50vw;
     text-align: left;
-    padding: 2em 0 2em 2em;
-    margin: 2em 0 2em 2em;
+    padding: 2rem 0 2rem 2rem;
+    margin: 2rem 0 2rem 2rem;
 }
 
 #about-me-description > * {
-    margin: 1em;
+    margin: 1rem;
 }
 
 #about-me-description > button {
-    max-width: 8em;
+    max-width: 8rem;
     background-color: white;
 }
 
 #gallery {
-    padding: 1em;
-    margin: 1em;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 #row1, #row2, #row1-captions, #row2-captions {
@@ -146,15 +146,15 @@ button {
 }
 
 #row1-captions, #row2-captions {
-    margin: .2em 0 3em 0;
+    margin: .2rem 0 3rem 0;
 }
 #row1-captions > *, #row2-captions > * {
-    width: 10em;
+    width: 10rem;
     text-align: center;
 }
 
 footer {
-    height: 15vh;
+    height: 10rem;
     background-color: rgba(200, 207, 221, 0.952);
     font-family: 'Roboto Mono', monospace;
     display: flex;
@@ -165,13 +165,13 @@ footer {
 }
 
 footer > button {
-    width: 8em;
-    margin: 2em;
+    width: 8rem;
+    margin: 2rem;
 }
 
 .fa {
     text-decoration: none;
-    margin: 0 .5em;
+    margin: 0 .5rem;
 }
 
 #icons {
