@@ -58,7 +58,7 @@ header {
     /* border-bottom: .1rem solid grey; */
     height: 10rem;
     padding: 0 1rem;
-    width: 100vw;
+    /* width: 100%; */
 }
 
 header h1 {
@@ -70,12 +70,12 @@ header h1 {
 
 }
 
-header button {
+nav button {
     margin: 1rem 0;
     padding: 0;
     border-radius: 0;
     height: 2rem;
-    min-width: 7rem;
+    min-width: 6rem;
     border-left: 1px solid grey;
     font-size: .75rem;
     font-family: 'Roboto Mono', monospace;
@@ -90,6 +90,8 @@ header button {
 
 #main {
     font-family: 'Roboto Mono', monospace;
+    width: 90%;
+    margin: auto;
 
 }
 
@@ -110,9 +112,12 @@ button {
 } */
 
 #about-me {
-    padding: 2rem;
-    margin: 2rem;
+    padding: 1rem;
+    margin: 1rem;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #about-me-description{
@@ -120,37 +125,39 @@ button {
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    width: 50vw;
+    min-width: 10vw;
+    max-width: 40%;
     text-align: left;
-    padding: 2rem 0 2rem 2rem;
-    margin: 2rem 0 2rem 2rem;
+    padding: 0 1rem;
+    margin: 0 1rem;
+}
+
+#about-me img {
+    max-height: 50rem;
 }
 
 #about-me-description > * {
-    margin: 1rem;
+    padding: .2rem;
+    margin: .2rem;
 }
 
-#about-me-description > button {
-    max-width: 8rem;
+#about-me-description button {
+    max-width: 10rem;
     background-color: white;
+    font-size: 1rem;
 }
 
 #gallery {
-    padding: 1rem;
-    margin: 1rem;
-}
-
-#row1, #row2, #row1-captions, #row2-captions {
     display: flex;
-    justify-content: space-around;
+    padding: 1rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
 }
 
-#row1-captions, #row2-captions {
-    margin: .2rem 0 3rem 0;
-}
-#row1-captions > *, #row2-captions > * {
-    width: 10rem;
-    text-align: center;
+ul{
+    margin: 0 1rem 2rem 1rem;
 }
 
 footer {
@@ -176,4 +183,112 @@ footer > button {
 
 #icons {
     display: flex;
+}
+
+@media(max-width: 1200px) {
+
+    #about-me-description {
+        /* width: 100%; */
+        min-width: 10vw;
+        max-width: 80%;
+        align-items: center;
+        text-align: center;
+
+    }
+}
+
+@media(max-width: 800px) {
+
+    #about-me {
+        margin: 1rem 0;
+        padding: 1rem 0;
+    }
+
+    #about-me img {
+        width: 70%;
+    }
+
+    #about-me-description {
+        padding: 0 1rem;
+        margin: 0 1rem;
+    }
+
+    #about-me-description > * {
+        padding: .2rem;
+        margin: .2rem;
+    }
+
+    #gallery {
+        padding: 1rem 0;
+    }
+}
+
+
+@media(max-width: 500px) {
+
+    header {
+        text-align: center;
+        background-color: white;
+        height: auto;
+    }
+
+    #about-me {
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+
+    nav {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    nav button {
+        margin: auto;
+        border: 1px solid #4f4f4f;
+    }
+
+    #gallery img {
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    #gallery {
+        max-width: 100%;
+    }
+
+    ul{
+        margin: 0 .5rem 1rem .5rem;
+        width: 45%
+    }
+
+    p {
+        font-size: .75rem;
+    }
+
+    figcaption {
+        font-size: .75rem;
+    }
+    
+    h1 {
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        font-size: .75rem;
+        min-width: 5rem;
+    }
+
+    #about-me-description button {
+        font-size: .75rem;
+        min-width: 5rem;
+    }
+
+    footer > * {
+        font-size: .75rem;
+    }
 }
