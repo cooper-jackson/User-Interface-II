@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Site Title</title>
 </head>
 <body>
+    <header>
+        <h1>Cooper Jackson</h1>
+        <nav>
+            <button id="home-button">Home</button><!--
+            --><button onclick="document.location='about.html'">About</button><!--
+            --><button onclick="document.location='contact.html'">Contact</button><!--
+            --><button onclick="document.location='projects.html'">Projects</button>
+        </nav>
+    </header>
+    <section id="main">
+        <section id="about-me">
+            <img src="https://picsum.photos/500/300/?random=10" id="about-me-photo">
+            <section id="about-me-description">
+                <h2>Cooper Jackson</h2>
+                <button id="about-me-button" onclick="document.location='projects.html'">My Projects</button>
+                <p id="about-me-paragraph"> Here are some words about me and my journey in coding so far. These words are authentic and inspiring. These words tell my story. My name is Cooper Jackson.</p>
+            </section>
+        </section>
+        <section id="gallery">
+            <ul>
+                <li><img src="https://picsum.photos/200/?random=1"></li>
+                <li><figcaption>title of a</figcaption></li>
+            </ul>
+            <ul>
+                <li><img src="https://picsum.photos/200/?random=2"></li>
+                <li><figcaption>project</figcaption></li>
+            </ul>
+            <ul>
+                <li><img src="https://picsum.photos/200/?random=3"></li>
+                <li><figcaption>might go</figcaption></li>
+            </ul>
+            <ul>
+                <li><img src="https://picsum.photos/200/?random=4"></li>
+                <li><figcaption>right here</figcaption></li>
+            </ul>
+            <ul>
+                <li><img src="https://picsum.photos/200/?random=5"></li>
+                <li><figcaption>cool thing</figcaption></li>
+            </ul>
+            <ul>
+                <li><img src="https://picsum.photos/200/?random=6"></li>
+                <li><figcaption>fun thing</figcaption></li>
+            </ul>
+            <ul>
+                <li><img src="https://picsum.photos/200/?random=7"></li>
+                <li><figcaption>spicy thing</figcaption></li>
+            </ul>
+
+            <ul>
+                <li><img src="https://picsum.photos/200/?random=8"></li>
+                <li><figcaption>special thing</figcaption></li>
+            </ul>
+        </section>
+    </section>
+    <footer>
+        <h2>Like what you see?</h2>
+        <button>Contact Me</button>
+        <div id=icons>
+            <a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/dooperjackson/" class="fa fa-instagram"></a>
+        </div>
+    </footer>
     
 </body>
 </html>
